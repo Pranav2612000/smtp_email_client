@@ -102,7 +102,7 @@ def smtp_login():
     print(username)
     user64 = encode_base64(username.encode('ascii'), eol='')
     #passstr = password_verify.get()
-    # passstr = "Pranav2000"
+    # passstr = "<your-password>"
     #password = passstr
     print(password)
     pass64 = encode_base64(password.encode('ascii'), eol='')
@@ -201,7 +201,7 @@ def imap_login():
     #user = username_verify.get()
     print("username I")
     print(username)
-    # pas = "Pranav2000"
+    # pas = "<your-password>"
     #pas = password_verify.get()
     #print(password)
     # LOGIN
@@ -292,8 +292,8 @@ def login_verify():
     print(username)
     print(password)
     if testing:
-        username = 'pranav2000joglekar@gmail.com'
-        password = 'Pranav2000'
+        username = '<your-email>'
+        password = '<your-password>'
         login_success()
         return
     #SMTP Verification
